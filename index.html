@@ -1,43 +1,75 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samen naar Budapest | IFOTES World Congress 2026</title>
+  <link rel="stylesheet" href="stijl.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark">♢</span><div><strong>Samen naar Budapest</strong><small>IFOTES World Congress 2026</small></div></div>
+    <nav>
+      <a href="#home">Home</a><a href="#groep">Onze groep</a><a href="#tijdlijn">Dagboek</a><a href="#ifotes">Congres</a><a href="#fotos">Foto's</a>
+    </nav>
+  </header>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+  <main id="home">
+    <section class="mockup-hero" aria-label="Startpagina Samen naar Budapest">
+      <img src="assets/startpagina-budapest.png" alt="Startpagina Samen naar Budapest met aftelklok en tijdlijn" />
+    </section>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <section class="count-strip">
+      <h2>Nog even aftellen...</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">0</strong><span>dagen</span></div>
+        <div><strong id="hours">0</strong><span>uur</span></div>
+        <div><strong id="minutes">0</strong><span>minuten</span></div>
+        <div><strong id="seconds">0</strong><span>seconden</span></div>
+      </div>
+    </section>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    <section class="intro" id="verhaal">
+      <p class="eyebrow">Tele-Onthaal Limburg • IFOTES World Congress</p>
+      <h1>Elke reis begint met een eerste ontmoeting.</h1>
+      <p>Op 23 juni kwamen wij samen om onze reis naar Budapest voor te bereiden. Deze website wordt ons digitaal reisboek: een warme plek voor foto's, verhalen, congresmomenten en herinneringen.</p>
+    </section>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    <section class="group" id="groep">
+      <h2>Onze reisgroep</h2>
+      <div class="people">
+        <article><img src="assets/anja.jpg" alt="Anja"><h3>Anja</h3></article>
+        <article><img src="assets/freddy.jpg" alt="Freddy"><h3>Freddy</h3></article>
+        <article><img src="assets/hilde.jpg" alt="Hilde"><h3>Hilde</h3></article>
+        <article><img src="assets/hubert.jpg" alt="Hubert"><h3>Hubert</h3></article>
+        <article><img src="assets/myriam.jpg" alt="Myriam"><h3>Myriam</h3></article>
+      </div>
+    </section>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+    <section class="timeline" id="tijdlijn">
+      <h2>Onze reis in 5 dagen</h2>
+      <div class="steps">
+        <div><span>23 juni</span><b>Eerste samenkomst</b></div>
+        <div><span>8 juli</span><b>Vertrek</b></div>
+        <div><span>9 juli</span><b>Congres</b></div>
+        <div><span>10 juli</span><b>Congres</b></div>
+        <div><span>11 juli</span><b>Budapest ontdekken</b></div>
+        <div><span>12 juli</span><b>Terug naar huis</b></div>
+      </div>
+    </section>
+
+    <section class="photo-card" id="fotos">
+      <img src="assets/groepsfoto-23-juni.jpg" alt="Groepsfoto van 23 juni" />
+      <div><p class="eyebrow">23 juni</p><h2>Hier begon ons verhaal</h2><p>De eerste samenkomst: plannen maken, aftellen en uitkijken naar een inspirerende week in Budapest.</p></div>
+    </section>
+
+    <section class="ifotes" id="ifotes">
+      <h2>IFOTES World Congress 2026</h2>
+      <p>Een week van ontmoeting, luisteren, leren en verbinden. Hier verzamelen we straks de mooiste inzichten, quotes en momenten van het congres.</p>
+    </section>
+  </main>
+
+  <footer>Met zorg gemaakt voor vijf vrijwilligers van Tele-Onthaal Limburg.</footer>
+</body>
+</html>
