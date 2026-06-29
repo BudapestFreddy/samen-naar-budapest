@@ -4,72 +4,124 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samen naar Budapest | IFOTES World Congress 2026</title>
+  <meta name="description" content="Digitaal reisboek van vijf vrijwilligers van Tele-Onthaal Limburg naar het IFOTES World Congress 2026 in Budapest." />
   <link rel="stylesheet" href="stijl.css" />
   <script defer src="app.js"></script>
 </head>
 <body>
   <header class="topbar">
-    <div class="brand"><span class="mark">♢</span><div><strong>Samen naar Budapest</strong><small>IFOTES World Congress 2026</small></div></div>
-    <nav>
-      <a href="#home">Home</a><a href="#groep">Onze groep</a><a href="#tijdlijn">Dagboek</a><a href="#ifotes">Congres</a><a href="#fotos">Foto's</a>
+    <a class="brand" href="#home" aria-label="Samen naar Budapest home">
+      <span class="brand-icon">✦</span>
+      <span><strong>Samen naar Budapest</strong><small>IFOTES World Congress 2026</small></span>
+    </a>
+    <nav aria-label="Hoofdnavigatie">
+      <a href="#home">Home</a>
+      <a href="#groep">Onze groep</a>
+      <a href="#tijdlijn">Tijdlijn</a>
+      <a href="#dagboek">Dagboek</a>
+      <a href="#fotos">Foto's</a>
     </nav>
   </header>
 
   <main id="home">
-    <section class="mockup-hero" aria-label="Startpagina Samen naar Budapest">
-      <img src="startpagina-budapest.png" alt="Startpagina Samen naar Budapest met aftelklok en tijdlijn" />
-    </section>
-
-    <section class="count-strip">
-      <h2>Nog even aftellen...</h2>
-      <div class="countdown" id="countdown">
-        <div><strong id="days">0</strong><span>dagen</span></div>
-        <div><strong id="hours">0</strong><span>uur</span></div>
-        <div><strong id="minutes">0</strong><span>minuten</span></div>
-        <div><strong id="seconds">0</strong><span>seconden</span></div>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Tele-Onthaal Limburg • IFOTES World Congress</p>
+        <h1>Samen naar <span>Budapest</span></h1>
+        <p class="date">📅 8 – 12 juli 2026</p>
+        <p class="lead">Vijf collega’s op weg naar een inspirerende week vol ontmoeting, kennis en mooie momenten.</p>
+        <a class="button" href="#groep">✈ Start onze reis</a>
       </div>
+      <figure class="hero-photo">
+        <img src="groepsfoto-23-juni.jpg" alt="Groepsfoto van de vijf deelnemers tijdens de eerste samenkomst op 23 juni" />
+      </figure>
     </section>
 
-    <section class="intro" id="verhaal">
-      <p class="eyebrow">Tele-Onthaal Limburg • IFOTES World Congress</p>
-      <h1>Elke reis begint met een eerste ontmoeting.</h1>
-      <p>Op 23 juni kwamen wij samen om onze reis naar Budapest voor te bereiden. Deze website wordt ons digitaal reisboek: een warme plek voor foto's, verhalen, congresmomenten en herinneringen.</p>
+    <section class="preview-note">
+      <p>Elke reis begint met een eerste ontmoeting. Op 23 juni kwamen we samen om onze reis naar Budapest voor te bereiden.</p>
     </section>
 
     <section class="group" id="groep">
-      <h2>Onze reisgroep</h2>
-      <div class="people">
-        <article><img src="anja.jpg" alt="Anja"><h3>Anja</h3></article>
-        <article><img src="freddy.jpg" alt="Freddy"><h3>Freddy</h3></article>
-        <article><img src="hilde.jpg" alt="Hilde"><h3>Hilde</h3></article>
-        <article><img src="hubert.jpg" alt="Hubert"><h3>Hubert</h3></article>
-        <article><img src="myriam.jpg" alt="Myriam"><h3>Myriam</h3></article>
+      <p class="section-kicker">Onze reisgroep</p>
+      <h2>Vijf mensen, één verhaal</h2>
+      <div class="people" aria-label="Reisgroep">
+        <article class="person">
+          <img class="portrait portrait-anja" src="anja.jpg" alt="Anja" />
+          <h3>Anja</h3>
+          <p>Ontmoeten</p>
+        </article>
+        <article class="person">
+          <img class="portrait portrait-freddy" src="freddy.jpg" alt="Freddy" />
+          <h3>Freddy</h3>
+          <p>Verbinden</p>
+        </article>
+        <article class="person">
+          <img class="portrait portrait-hilde" src="hilde.jpg" alt="Hilde" />
+          <h3>Hilde</h3>
+          <p>Inspireren</p>
+        </article>
+        <article class="person">
+          <img class="portrait portrait-hubert" src="hubert.jpg" alt="Hubert" />
+          <h3>Hubert</h3>
+          <p>Leren</p>
+        </article>
+        <article class="person">
+          <img class="portrait portrait-myriam" src="myriam.jpg" alt="Myriam" />
+          <h3>Myriam</h3>
+          <p>Genieten</p>
+        </article>
       </div>
+    </section>
+
+    <section class="count-card" aria-label="Aftelklok">
+      <p class="section-kicker">Nog even aftellen...</p>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">0</strong><span>Dagen</span></div>
+        <div><strong id="hours">0</strong><span>Uur</span></div>
+        <div><strong id="minutes">0</strong><span>Minuten</span></div>
+        <div><strong id="seconds">0</strong><span>Seconden</span></div>
+      </div>
+      <p class="count-caption">tot ons avontuur begint.</p>
     </section>
 
     <section class="timeline" id="tijdlijn">
-      <h2>Onze reis in 5 dagen</h2>
+      <p class="section-kicker">Onze reis in 5 dagen</p>
+      <h2>Van voorbereiding tot thuiskomst</h2>
       <div class="steps">
-        <div><span>23 juni</span><b>Eerste samenkomst</b></div>
-        <div><span>8 juli</span><b>Vertrek</b></div>
-        <div><span>9 juli</span><b>Congres</b></div>
-        <div><span>10 juli</span><b>Congres</b></div>
-        <div><span>11 juli</span><b>Budapest ontdekken</b></div>
-        <div><span>12 juli</span><b>Terug naar huis</b></div>
+        <article><span>23 juni</span><strong>Eerste samenkomst</strong><small>Hier begon ons verhaal.</small></article>
+        <article><span>8 juli</span><strong>Vertrek</strong><small>Op weg naar Budapest.</small></article>
+        <article><span>9 juli</span><strong>Congres</strong><small>Ontmoeten en leren.</small></article>
+        <article><span>10 juli</span><strong>Congres</strong><small>Inspiratie meenemen.</small></article>
+        <article><span>11 juli</span><strong>Budapest</strong><small>De stad beleven.</small></article>
+        <article><span>12 juli</span><strong>Terug naar huis</strong><small>Met herinneringen.</small></article>
       </div>
     </section>
 
-    <section class="photo-card" id="fotos">
-      <img src="groepsfoto-23-juni.jpg" alt="Groepsfoto van 23 juni" />
-      <div><p class="eyebrow">23 juni</p><h2>Hier begon ons verhaal</h2><p>De eerste samenkomst: plannen maken, aftellen en uitkijken naar een inspirerende week in Budapest.</p></div>
+    <section class="story" id="dagboek">
+      <div>
+        <p class="section-kicker">Dagboek</p>
+        <h2>Deze website groeit met ons mee</h2>
+        <p>Tijdens de reis voegen we hier foto’s, verhalen, congresmomenten en kleine herinneringen toe. Vandaag is dit alvast ons voorsmaakje.</p>
+      </div>
+      <blockquote>“Een gesprek kan een leven veranderen.”<br><span>— IFOTES</span></blockquote>
     </section>
 
-    <section class="ifotes" id="ifotes">
-      <h2>IFOTES World Congress 2026</h2>
-      <p>Een week van ontmoeting, luisteren, leren en verbinden. Hier verzamelen we straks de mooiste inzichten, quotes en momenten van het congres.</p>
+    <section class="gallery" id="fotos">
+      <p class="section-kicker">Foto’s</p>
+      <h2>De eerste beelden</h2>
+      <div class="photo-grid">
+        <img src="groepsfoto-23-juni.jpg" alt="Groepsfoto van 23 juni" />
+        <img src="anja.jpg" alt="Anja" />
+        <img src="freddy.jpg" alt="Freddy" />
+        <img src="hilde.jpg" alt="Hilde" />
+        <img src="hubert.jpg" alt="Hubert" />
+        <img src="myriam.jpg" alt="Myriam" />
+      </div>
     </section>
   </main>
 
-  <footer>Met zorg gemaakt voor vijf vrijwilligers van Tele-Onthaal Limburg.</footer>
+  <footer>
+    <p>Een herinnering die we samen bouwen. <span>Freddy & ChatGPT</span></p>
+  </footer>
 </body>
 </html>
