@@ -71,7 +71,10 @@
 
     <section class="section ifotes" id="ifotes">
       <div class="poster reveal">
-        <img src="ifotes-affiche.png" alt="Officiële affiche IFOTES World Congress 2026" />
+        <button class="poster-button" id="posterBtn" aria-label="Open de officiële IFOTES-affiche groot">
+          <img src="ifotes-affiche.png" alt="Officiële affiche IFOTES World Congress 2026" />
+        </button>
+        <p class="poster-caption">Klik op de affiche om ze groot te bekijken.</p>
       </div>
       <div class="section-text reveal">
         <p class="kicker">Het congres</p>
@@ -133,6 +136,13 @@
       <p><strong>Met veel zorg opgebouwd door Freddy, samen met ChatGPT.</strong></p>
       <blockquote>“De mooiste herinneringen maak je samen.”</blockquote>
     </div>
+  </dialog>
+
+
+
+  <dialog id="posterDialog" class="dialog poster-dialog">
+    <button class="close" data-close aria-label="Sluiten">×</button>
+    <img src="ifotes-affiche.png" alt="Officiële affiche IFOTES World Congress 2026 groot" />
   </dialog>
 
   <script src="app.js"></script>

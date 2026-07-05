@@ -62,3 +62,7 @@ const compassDialog = document.getElementById('compassDialog');
 document.getElementById('compassBtn')?.addEventListener('click', () => compassDialog.showModal());
 document.querySelectorAll('[data-close]').forEach(btn => btn.addEventListener('click', () => btn.closest('dialog').close()));
 document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click', e => { if(e.target === dialog) dialog.close(); }));
+
+
+const posterDialog = document.getElementById('posterDialog');
+document.getElementById('posterBtn')?.addEventListener('click', () => posterDialog?.showModal());
