@@ -1,0 +1,33 @@
+HANDLEIDING — Samen naar Budapest
+
+1. Website bijwerken
+- Open GitHub en ga naar repository: samen-naar-budapest.
+- Klik op Add file > Upload files.
+- Sleep de gewijzigde bestanden in GitHub.
+- Klik op Commit changes.
+- Wacht tot rechts bij GitHub Pages het groene vinkje verschijnt.
+- Open de website en druk Ctrl + F5.
+
+2. Foto vervangen
+- Geef de nieuwe foto exact dezelfde bestandsnaam als de foto die je wilt vervangen.
+- Upload die foto naar GitHub.
+- Commit changes.
+- Wacht op het groene vinkje en vernieuw de website met Ctrl + F5.
+
+3. Dagboektekst aanpassen
+- Open index.html.
+- Zoek het deel Reisdagboek.
+- Pas de tekst tussen de <span>...</span> regels aan.
+- Commit changes.
+
+4. Tijdens de reis
+- Eerst genieten.
+- Daarna één of twee foto's kiezen.
+- Kort tekstje schrijven: wat hebben we gezien, gehoord of gevoeld?
+- Niet te veel tegelijk. Eén dag, één verhaal.
+
+5. Reservekopie
+- Download af en toe de volledige repository als ZIP.
+- Bewaar die op je computer of USB-stick.
+
+Sommige reizen beginnen lang voordat het vliegtuig vertrekt.

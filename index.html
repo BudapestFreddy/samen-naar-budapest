@@ -16,7 +16,6 @@
     <nav aria-label="Hoofdnavigatie">
       <a href="#verhaal">Verhaal</a>
       <a href="#groep">Reisgroep</a>
-      <a href="#ifotes">IFOTES</a>
       <a href="#dagboek">Dagboek</a>
     </nav>
   </header>
@@ -69,21 +68,6 @@
       <p class="hint reveal">Klik op een foto om het persoonlijke verhaal te lezen.</p>
     </section>
 
-    <section class="section ifotes" id="ifotes">
-      <div class="poster reveal">
-        <button class="poster-button" id="posterBtn" aria-label="Open de officiële IFOTES-affiche groot">
-          <img src="ifotes-affiche.png" alt="Officiële affiche IFOTES World Congress 2026" />
-        </button>
-        <p class="poster-caption">Klik op de affiche om ze groot te bekijken.</p>
-      </div>
-      <div class="section-text reveal">
-        <p class="kicker">Het congres</p>
-        <h2>The Human Touch — The Power of Presence</h2>
-        <p>Het IFOTES World Congress brengt mensen en organisaties samen die zich inzetten voor telefonische en online hulpverlening. Voor onze groep wordt dit een kans om te leren, te ontmoeten en nieuwe inzichten mee naar huis te nemen.</p>
-        <p>De officiële affiche krijgt hier bewust een plaats: zij verbindt het internationale congres met ons eigen reisverhaal.</p>
-      </div>
-    </section>
-
     <section class="section timeline" id="dagboek">
       <div class="section-heading reveal">
         <p class="kicker">Reisdagboek</p>
@@ -100,15 +84,16 @@
       </div>
     </section>
 
-    <section class="section gallery">
+    <section class="section gallery" id="fotos">
       <div class="section-heading reveal">
         <p class="kicker">Fotogalerij</p>
         <h2>De eerste beelden.</h2>
+        <p>Vandaag tonen we waar het verhaal begon en waar de reis ons naartoe brengt. Vanaf morgen vullen we dit aan met echte momenten uit Budapest.</p>
       </div>
       <div class="photo-strip reveal">
         <img src="groepsfoto-23-juni.jpg" alt="Groepsfoto voorbereiding">
-        <img src="startpagina-budapest.png" alt="Budapest sfeerbeeld">
-        <img src="ifotes-affiche.png" alt="IFOTES affiche">
+        <img src="budapest-sfeer.svg" alt="Budapest sfeerbeeld">
+        <img src="startpagina-budapest.png" alt="Samen naar Budapest sfeerbeeld">
       </div>
     </section>
   </main>
@@ -128,21 +113,13 @@
     <button class="close" data-close aria-label="Sluiten">×</button>
     <div class="modal-story">
       <h2>🧭 Over deze website</h2>
-      <p><strong>Elke reis begint met een idee.</strong></p>
-      <p>Voor onze reis naar het IFOTES World Congress in Budapest wilden we meer dan alleen foto’s bewaren. We wilden een plek creëren waar herinneringen, ontmoetingen en verhalen samenkomen.</p>
-      <p>Zo ontstond <strong>Samen naar Budapest</strong>.</p>
-      <p>Stap voor stap groeide deze website uit een eenvoudig idee tot een persoonlijk digitaal reisdagboek. Onderweg werd nagedacht over kleuren, foto’s, teksten, vormgeving en de vele kleine details die een website een eigen karakter geven.</p>
-      <p>Deze website is in de eerste plaats het verhaal van vijf vrijwilligers van Tele-Onthaal Limburg die samen op weg gaan naar Budapest.</p>
+      <p><strong>Sommige reizen beginnen lang voordat het vliegtuig vertrekt.</strong></p>
+      <p>Voor onze reis naar het IFOTES World Congress in Budapest wilden we meer dan alleen foto’s bewaren. We wilden een plek maken waar herinneringen, ontmoetingen en persoonlijke verhalen samenkomen.</p>
+      <p>Zo ontstond <strong>Samen naar Budapest</strong>: stap voor stap, met koffie, geduld, veel zoeken en evenveel goesting.</p>
+      <p>Deze website vertelt het verhaal van vijf vrijwilligers van Tele-Onthaal Limburg die samen op weg gaan naar Budapest. Vanaf de eerste reisdag groeit ze verder uit tot ons digitale reisboek.</p>
       <p><strong>Met veel zorg opgebouwd door Freddy, samen met ChatGPT.</strong></p>
       <blockquote>“De mooiste herinneringen maak je samen.”</blockquote>
     </div>
-  </dialog>
-
-
-
-  <dialog id="posterDialog" class="dialog poster-dialog">
-    <button class="close" data-close aria-label="Sluiten">×</button>
-    <img src="ifotes-affiche.png" alt="Officiële affiche IFOTES World Congress 2026 groot" />
   </dialog>
 
   <script src="app.js"></script>
