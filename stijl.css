@@ -32,3 +32,19 @@
 .photo-strip img:nth-child(2){object-fit:cover;background:#071a2f;}
 .photo-strip img:nth-child(3){object-fit:cover;background:#071a2f;}
 @media(max-width:820px){.photo-strip img{height:230px}}
+
+/* Laatste mobiele correctie — fotogalerij op gsm onder elkaar */
+@media (max-width: 820px){
+  .photo-strip{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:18px !important;
+  }
+  .photo-strip img{
+    width:100% !important;
+    height:auto !important;
+    max-height:none !important;
+    object-fit:contain !important;
+    background:#071a2f;
+  }
+}
