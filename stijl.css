@@ -23,3 +23,12 @@
 .photo-strip img:nth-child(2){object-fit:cover;background:#071a2f;}
 .photo-strip img:nth-child(3){object-position:center top;}
 @media(max-width:820px){.photo-strip img{height:230px}.section-heading p{font-size:.98rem}}
+
+
+/* Laatste vertrek-update — fotogalerij met 3 Budapest-beelden */
+.photo-strip{grid-template-columns:repeat(3,1fr);}
+.photo-strip img{height:300px;}
+.photo-strip img:nth-child(1){object-position:center center;}
+.photo-strip img:nth-child(2){object-fit:cover;background:#071a2f;}
+.photo-strip img:nth-child(3){object-fit:cover;background:#071a2f;}
+@media(max-width:820px){.photo-strip img{height:230px}}
