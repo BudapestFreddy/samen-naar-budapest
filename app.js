@@ -32,7 +32,7 @@ const people = {
   hubert: {name:'Hubert', img:'hubert.jpg', tag:'Rust en hoop', blocks:[
     ['Waarom ga ik mee naar Budapest?', 'Om onze Tele-Onthaal-afdeling op een waardige manier te vertegenwoordigen.'],
     ['Waar kijk ik het meest naar uit?', 'Ik kijk ernaar uit om te leren hoe we op een goede manier kunnen omgaan met de snel evoluerende AI-technieken en nieuwe media. Daarnaast hoop ik gelijkgestemde mensen uit andere landen te ontmoeten en ervaringen uit te wisselen.'],
-    ['Wat betekent Tele-Onthaal voor mij?', 'Tele-Onthaal doet mij telkens opnieuw beseffen hoe goed wij het zelf hebben. Tegelijk geeft het mij de kans om, al is het maar met een klein steentje, iemand een moment van rust en hoop te bieden.'],
+    ['Wat betekent Tele-Onthaal voor mij?', 'Tele-Onthaal doet mij telkens opnieuw beseffen hoe goed wij het zelf wel hebben. Tegelijkertijd geeft het me de kans om, al is het maar voor heel even, andere mensen een moment van rust en hoop te bieden.'],
     ['Mijn quote', 'Na regen komt altijd zonneschijn.']
   ]},
   myriam: {name:'Myriam', img:'myriam.jpg', tag:'Wij reizen om te leren', blocks:[
@@ -62,3 +62,7 @@ const compassDialog = document.getElementById('compassDialog');
 document.getElementById('compassBtn')?.addEventListener('click', () => compassDialog.showModal());
 document.querySelectorAll('[data-close]').forEach(btn => btn.addEventListener('click', () => btn.closest('dialog').close()));
 document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click', e => { if(e.target === dialog) dialog.close(); }));
+
+
+const posterDialog = document.getElementById('posterDialog');
+document.getElementById('posterBtn')?.addEventListener('click', () => posterDialog?.showModal());
